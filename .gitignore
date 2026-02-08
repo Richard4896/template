@@ -1,0 +1,45 @@
+# -----------------------------
+# this is generic starter file, can tune according to project needs
+# -----------------------------
+# Secrets (NEVER commit these)
+# best practice: append .secret to every secret file
+# -----------------------------
+.env
+.env.*
+secrets/
+secret/
+*.secret
+*.key
+*.pem
+*.pfx
+*.crt
+
+# -----------------------------
+# Traefik / Certs
+# -----------------------------
+acme.json
+#traefik/acme/
+acme/
+#traefik/acme.json
+
+# -----------------------------
+# Docker / Compose local state
+# -----------------------------
+docker-compose.override.yml
+**/docker-compose.override.yml
+.docker/
+
+# -----------------------------
+# Runtime data & logs
+# -----------------------------
+data/
+logs/
+cache/
+*.log
+
+# -----------------------------
+# OS junk
+# -----------------------------
+.DS_Store
+Thumbs.db
+*~
